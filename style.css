@@ -1,0 +1,74 @@
+body{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background: url("images/bg-pattern-top.svg");
+    overflow:hidden;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+#card
+{
+    display:grid;
+    grid-template-columns:300px;
+    grid-template-rows: 150px 130px 80px;
+    grid-template-areas: "image""infos" "stats";
+    border-radius: 18px;
+    background:white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    text-align:center;
+}
+#top-card{
+    grid-area: image;
+    background:url("images/bg-pattern-card.svg");
+    
+}
+#pp{
+    margin-top: 5px;
+    border-radius: 100%;
+}
+#name{
+    font-weight: bold;
+}
+#card-picture{
+    background:white;
+    /*grid-area: pp;*/
+    position: absolute;
+    width:105px;
+    height:105px;
+    border-radius:100%;
+    display:block;
+    top:38%;
+    left:38%;
+    border: 1px solid grey;
+}
+#infos-card{
+    grid-area: infos;
+    margin-top:15%;
+}
+#bottom-card{
+    grid-area: stats;
+    border-top: hsl(0, 0%, 78%) 2px solid;
+}
+.stats{
+    display: inline-block;
+    padding: 20px 20px 20px 0px;    
+}
+.stats span{
+    font-weight: bold;
+}
+
+/*footer*/
+.attribution 
+{ 
+    margin-top: 150%;
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a 
+{ 
+    color: hsl(228, 45%, 44%); 
+}
+
+
